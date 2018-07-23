@@ -75,7 +75,7 @@ def is_properly_nested_string(S):
     else:
         splitted_by_open = S.split("(")
         splitted_by_close = S.split(")")
-        if splitted_by_open == splitted_by_close:
+        if len(splitted_by_open) == len(splitted_by_close):
             reuslt = 1
     return reuslt
 print(is_properly_nested_string("(()(())())"))
